@@ -22,7 +22,7 @@ To generate the sip files in a sip directory, use `mkdir sip; msip -g sip pyindi
 
 
 == Sip Configuration ==
-The file configure.py contains all the stuff to configure, generate and install the binding module.
+The file pyindi-configure.py contains all the stuff to configure, generate and install the binding module.
 
 == The client binding ==
 
