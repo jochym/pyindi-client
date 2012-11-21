@@ -12,7 +12,7 @@ The Python binding of the libindi library has been made with the [http://www.riv
 
 In module properties, set the default encoding to ASCII (str in Python).
 
-First, set source directory in the scanner to the latest version of libindi source files, file filter to *.h, and parser arguments to -I/usr/include/libindi and create a new header directory:
+First, set source directory in the scanner to the latest version of libindi source files, file filter to `*`.h, and parser arguments to -I/usr/include/libindi and create a new header directory:
   # for libindi/libs (IndiApi): ignore all but indiapi.h and indidevapi.h
   # for libindi/libs/indibase: ignore al but baseclient.h, basedevice.h, indibase.h and indiproperty.h
 
