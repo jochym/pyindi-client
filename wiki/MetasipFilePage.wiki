@@ -5,7 +5,7 @@
 
 == Presentation ==
 
-The Python binding of the libindi library has been made with the [http://www.riverbankcomputing.com/hg/metasip/ metasip] package. This package is the one used for the PyQt binding itself.
+The Python binding of the libindi library has been made with the [http://www.riverbankcomputing.com/hg/metasip/ metasip] package. This package is the one used for the PyQt binding itself. The principle of operation is to scan some given directories and select some include files, then to parse each selected include file to retain classes, types and methods we would like to bind. The tool generates the corresponding sip files. The point is mainly to add wrapper code for types that sip is unable to automatically bind itself.
 
 
 == Installation of metasip ==
