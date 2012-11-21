@@ -1,0 +1,15 @@
+#summary Some notes about the metasip file.
+#labels Phase-Implementation
+
+= The metasip file =
+
+== Presentation ==
+
+The Python binding of the libindi library has been made with the [http://www.riverbankcomputing.com/hg/metasip/ metasip] package. This package is the one used for the PyQt binding itself.
+
+
+== Installation of metasip ==
+
+== The client binding ==
+
+=== indidevapi.h ==
