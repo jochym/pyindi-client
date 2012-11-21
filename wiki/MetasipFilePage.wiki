@@ -10,14 +10,20 @@ The Python binding of the libindi library has been made with the [http://www.riv
 
 == Installation/Use of metasip ==
 
-In module properties, set the default encoding to ASCII (str in Python).
+use `msip pyindi.msp` to edit/create the metasip file. pyindi is the name of the metasip project, PyIndi the name of the python module.
+
+In module properties, set the default encoding to ASCII (str in both Python 2 and 3).
 
 First, set source directory in the scanner to the latest version of libindi source files, file filter to `*`.h, and parser arguments to -I/usr/include/libindi and create a new header directory:
   # for libindi/libs (IndiApi): ignore all but indiapi.h and indidevapi.h
   # for libindi/libs/indibase: ignore al but baseclient.h, basedevice.h, indibase.h and indiproperty.h
 
+To generate the sip files in a sip directory, use `mkdir sip; msip -g sip pyindi.msp`
+
+
+== Sip Configuration ==
+The file configure.py contains all the stuff to configure, generate and install the binding module.
+
 == The client binding ==
-
-
 
 === indidevapi.h ==
