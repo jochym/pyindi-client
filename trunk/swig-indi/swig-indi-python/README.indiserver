@@ -1,0 +1,23 @@
+The indiserverpython.i file is an attempt to wrap indi server side functions into Python.
+It requires the original indiserver.c file to be split into a library part libindiserver, 
+and an executable file only containing the main function. Both lie under the libindiserver directory. 
+To build the wrapper, you should then compile and install the libindiserver, and then compile
+and install the Python wrapper.
+1. Build and install libindiserver:
+mkdir ~/builds/libindiserver # or whatever build directory you choose
+cd  ~/builds/libindiserver
+cmake path-to-source/swig-indi-python/libindiserver/
+make
+sudo make install 
+2. Build and install Python wrappers:
+mkdir ~/builds/pyindi-client or whatever build directory you choose
+cd  ~/builds/pyindi-client
+cmake path-to-source/swig-indi-python/
+make
+sudo make install 
+
+A test file test-indiserver.py is included.  It starts indi_v4l2_ccd and indi_eqmod_telescope. 
+It also needs you create a fifo
+mkfifo /tmp/indiFIFO
+You can then run it with
+python path-to-source/swig-indi-python/test-indiserver.py
